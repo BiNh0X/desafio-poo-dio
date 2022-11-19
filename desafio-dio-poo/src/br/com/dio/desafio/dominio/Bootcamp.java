@@ -8,7 +8,7 @@ import java.util.Set;
 public class Bootcamp {
     
     private String nome;
-    private String dscricao;
+    private String descricao;
     private final LocalDate dataInicial = LocalDate.now();
     private final LocalDate dataFinal = dataInicial.plusDays(45);
     private Set<Dev> devsInscritos = new HashSet<>();
@@ -23,11 +23,11 @@ public class Bootcamp {
     }
 
     public String getDscricao() {
-        return dscricao;
+        return descricao;
     }
 
     public void setDscricao(String dscricao) {
-        this.dscricao = dscricao;
+        this.descricao = dscricao;
     }
 
     public LocalDate getDataInicial() {
@@ -59,7 +59,7 @@ public class Bootcamp {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((nome == null) ? 0 : nome.hashCode());
-        result = prime * result + ((dscricao == null) ? 0 : dscricao.hashCode());
+        result = prime * result + ((descricao == null) ? 0 : descricao.hashCode());
         result = prime * result + ((dataInicial == null) ? 0 : dataInicial.hashCode());
         result = prime * result + ((dataFinal == null) ? 0 : dataFinal.hashCode());
         result = prime * result + ((devsInscritos == null) ? 0 : devsInscritos.hashCode());
@@ -81,10 +81,10 @@ public class Bootcamp {
                 return false;
         } else if (!nome.equals(other.nome))
             return false;
-        if (dscricao == null) {
-            if (other.dscricao != null)
+        if (descricao == null) {
+            if (other.descricao != null)
                 return false;
-        } else if (!dscricao.equals(other.dscricao))
+        } else if (!descricao.equals(other.descricao))
             return false;
         if (dataInicial == null) {
             if (other.dataInicial != null)
