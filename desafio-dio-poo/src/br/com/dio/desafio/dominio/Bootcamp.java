@@ -22,12 +22,12 @@ public class Bootcamp {
         this.nome = nome;
     }
 
-    public String getDscricao() {
+    public String getDescricao() {
         return descricao;
     }
 
-    public void setDscricao(String dscricao) {
-        this.descricao = dscricao;
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 
     public LocalDate getDataInicial() {
